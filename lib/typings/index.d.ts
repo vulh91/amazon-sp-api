@@ -452,11 +452,14 @@ declare module "amazon-sp-api" {
 
   type ReqOptions = IReqOptions;
 
+  type ReqHeaders = Record<string, string | number | boolean>;
+
   export interface ReqParams<TOperation extends Operation> {
     operation: TOperation;
     path?: PathType<TOperation>;
     query?: QueryType<TOperation>;
     body?: BodyType<TOperation>;
+    headers?: ReqHeaders;
     options?: ReqOptions
   }
 

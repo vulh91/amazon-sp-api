@@ -303,5 +303,5 @@ describe('configErrors', async function(){
       expect(e.message).to.equal('The request has an invalid parameter : code');
     }
   });
-
+  
 });
