@@ -456,6 +456,7 @@ declare module "amazon-sp-api" {
 
   export interface ReqParams<TOperation extends Operation> {
     operation: TOperation;
+    api_path?: string;
     path?: PathType<TOperation>;
     query?: QueryType<TOperation>;
     body?: BodyType<TOperation>;
